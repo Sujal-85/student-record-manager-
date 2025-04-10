@@ -14,7 +14,7 @@ function App() {
   // Fetch students from API
   const fetchStudents = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/student/');
+      const response = await axios.get('https://student-record-manager-kj5k.onrender.com/api/student/');
       setStudents(response.data);
       setIsLoading(false);
     } catch (error) {
