@@ -24,7 +24,7 @@ const AddStudent = () => {
     setSuccess(false);
     
     try {
-      const res = await axios.post('http://localhost:5000/api/student/add', formData);
+      const res = await axios.post('https://student-record-manager-kj5k.onrender.com/api/student/add', formData);
       setSuccess(true);
       setFormData({
         registrationNo: '',
