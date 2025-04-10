@@ -11,7 +11,6 @@ const connectDB = async () => {
   try {
     await mongoose.connect('mongodb+srv://sujay:sujay123@studentmanagement.gpm4ms2.mongodb.net/?retryWrites=true&w=majority&appName=studentManagement', {
       useNewUrlParser: true,
-      useUnifiedTopology: true,
     });
     console.log('MongoDB connected successfully');
   } catch (err) {
