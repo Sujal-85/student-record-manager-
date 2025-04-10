@@ -38,7 +38,7 @@ const UpdateStudent = () => {
       setError('');
       
       try {
-        const res = await axios.get(`http://localhost:5000/api/student/get/${regNo}`);
+        const res = await axios.get(`https://student-record-manager-kj5k.onrender.com/api/student/get/${regNo}`);
         setFormData({
           name: res.data.name || '',
           class: res.data.class || '',
