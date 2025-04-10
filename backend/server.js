@@ -26,7 +26,7 @@ app.use(express.json());
 
 // Enhanced CORS configuration
 app.use(cors({
-  origin:'http://localhost:3000',
+  origin:'https://student-record-manager.vercel.app/',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
