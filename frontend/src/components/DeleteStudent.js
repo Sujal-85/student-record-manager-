@@ -15,7 +15,7 @@ const DeleteStudent = () => {
     setSuccess(false);
     
     try {
-      await axios.delete(`http://localhost:5000/api/student/delete/${regNo}`);
+      await axios.delete(`https://student-record-manager-kj5k.onrender.com/api/student/delete/${regNo}`);
       setSuccess(true);
       setRegNo('');
     } catch (err) {
